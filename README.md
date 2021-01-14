@@ -1,5 +1,5 @@
-Lapp consente la ricerca di offerte di lavoro in base alla location e al livello.
-Di defoult vengono visualizzati i risultati per la località:Italia e livello:tutti.
+L'app consente la ricerca di offerte di lavoro in base alla location e al livello.
+Di default vengono visualizzati i risultati per la località:Italia e livello:tutti.
 Ho dovuto inserire un filtro per controllare che non venissero selezionate offerte in cui la location è vuota, per evitare che la chiamata API vada in errore.
 Una volta visualizzata la lista delle offerte sarà possibile selezionare "visualizza dettaglio" per aprire una nuova path che contiene i dettagli dell'offerta. Utilizzo il routing per spostarmi da una 'pagina' all'altra.
 Nella pagina di dettaglio viene fatta una nuova chimata API in base all'id preso dalla route.
