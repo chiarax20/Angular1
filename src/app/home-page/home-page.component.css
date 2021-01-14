@@ -1,0 +1,18 @@
+.Image{
+  display: flex;
+  justify-content: center;
+  padding: 5%;
+}
+
+.HomePage{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.HomePage h1 {
+  display: flex;
+  justify-content: center;
+  color:  rgb(149, 67, 13);
+  font-size: 50px;
+}

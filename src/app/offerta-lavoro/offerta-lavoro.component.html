@@ -1,0 +1,33 @@
+
+<app-filtri-ricerca (parentFun)="click()" (childEvent)="InputCity=$event" (childEvent2)="LevelValue=$event" (childEvent3)="RadioValue=$event" ></app-filtri-ricerca>
+
+<div class="ChFilter">
+  <h3>"Searching by:  "</h3><br/>
+  <h4>{{this.str1}}</h4><br/>
+  <h4>{{this.str2}}</h4>
+</div>
+<div class="Sezione-offerte">
+  <div class="Offerte">
+    <div *ngFor="let offerte of lista | slice: 0:10, let i=index" class="Offerta" >
+          <h3>{{offerte.name}}</h3>
+          <p> <b>Level: </b> {{offerte.levels[0].name}}</p>
+          <p> <b>Type:</b>   {{offerte.short_name}}</p>
+          <p> <b>Location:</b>   {{offerte.locations[0].name}}</p>
+          <p> <b>Company :</b>   {{offerte.company.name}}</p>
+         <button class="Button" routerLink="/dettaglio/{{offerte.id}}">
+            Dettagli offerta
+         </button>
+   </div>
+   <div *ngIf="lista.length <1 " class="NoResult">
+    No Results Found
+  </div>
+  <div *ngIf="errormsg" class="Errormsg">
+    <p>{{errormsg}}.</p>
+    <p>La chiamata non è andata a buon fine!</p>
+    <div>
+      <button class="Button"  (click)="goBack()">go back</button>
+    </div>
+  </div>
+</div>
+
+

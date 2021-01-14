@@ -1,0 +1,8 @@
+.Page {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(235, 232, 232);
+  font-family:'Bebas Neue', cursive;
+}
+

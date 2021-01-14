@@ -1,0 +1,39 @@
+.Dettaglio-offerte{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  font-size: large;
+  justify-content: center;
+  margin: 6%;
+}
+
+.companydetail h1{
+  font-size: 50px;
+  text-decoration: underline;
+}
+
+.Bottone-back{
+  background-color:   rgb(149, 67, 13);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  color: rgb(235, 232, 232);
+  margin: 40px;
+}
+
+.company{
+  border: 5px solid  rgb(149, 67, 13);
+  border-radius: 5px;
+  background-color:  rgb(149, 67, 13, 0.2);
+}
+
+@media only screen  and (max-width: 800px) {
+  .company img{
+    width: 100%;
+  }
+}

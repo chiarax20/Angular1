@@ -1,0 +1,70 @@
+.Filter{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding:2vh;
+}
+
+.Form {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  padding:2vh;
+  font-size: 25px;
+  color: rgb(149, 67, 13);
+}
+
+.City{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+
+.Checkbox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  text-align:unset;
+  flex-direction: column;
+}
+
+.Button{
+  background-color:  rgb(149, 67, 13);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  color: rgb(235, 232, 232);
+  font-size: 18px;
+}
+
+.Search{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.CityInput{
+  padding: 3vh;
+}
+
+.Search input{
+  background-color:rgb(204, 201, 201);
+  color:   rgb(149, 67, 13);
+  font-size: 30px;
+}
+
+@media only screen  and (max-width: 800px) {
+  .Search input{
+    font-size: 18px;
+  }
+}
+
+
+
+

@@ -1,0 +1,39 @@
+<div class="Filter">
+
+  <div class="Form">
+
+    <div class="City">
+      <p>City:</p>
+      <input type="radio" id="Choose" name="city" value="Choose" [(ngModel)]="city" (click)="ChooseCity()">
+      <label for="Choose">Choose</label><br>
+      <input type="radio" id="All" name="city" value="All" #radio [(ngModel)]="all" (click)="CityValue(radio.value)">
+      <label for="All">All</label><br>
+    </div>
+
+    <div class="Checkbox">
+      <p>Level:</p>
+      <div class="Check">
+      <input type="checkbox" id="Entry" name="EntryLevel" value="entry" [(ngModel)]="check1" #form1 (click)="onSelect(form1.value)">
+      <label for="Low"> Entry Level </label><br>
+      <input type="checkbox" id="MidLevel" name="MidLevel" value="mid" [(ngModel)]="check2" #form2 (click)="onSelect(form2.value)">
+      <label for="MidLevel"> Mid Level </label><br>
+      <input type="checkbox" id="SeniorLevel" name="SeniorLevel" value="senior" [(ngModel)]="check3" #form3 (click)="onSelect(form3.value)">
+      <label for="SeniorLevel"> Senior Level </label><br>
+      <input type="checkbox" id="Internship" name="internship" value="internship" [(ngModel)]="check4" #form4 (click)="onSelect(form4.value)">
+      <label for="Internship"> Internship </label><br>
+      <input type="checkbox" id="Management" name="Management" value="management" [(ngModel)]="check5" #form5 (click)="onSelect(form5.value)">
+      <label for="Management">  Management </label>
+      </div>
+    </div>
+
+  </div>
+
+    <div class="Search">
+      <div *ngIf="choose" class="CityInput">
+        <input type="text" #childText [(ngModel)]="form" (keyup)="onChange(childText.value)">
+      </div>
+      <button type="button" (click)="click()" (click)="Clear()" class="Button">Search</button>
+    </div>
+
+
+</div>

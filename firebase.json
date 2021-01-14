@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist/JobAplication",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

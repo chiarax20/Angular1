@@ -1,0 +1,15 @@
+<div class="Dettaglio-offerte" *ngIf="offerta">
+
+  <div *ngIf="condition" class="company">
+    <img src={{compagnia.refs.logo_image}}>
+    <h3>Location:{{compagnia.locations[0].name}}</h3>
+    <p>Description : {{compagnia.description}}</p>
+  </div>
+  <div class="companydetail">
+    <h1 (click)="DetComp()">{{offerta.company.name}}</h1>
+    <h5 class="clickCompany">Click company name for more details!</h5>
+  </div>
+  <div [innerHTML]="offerta.contents"></div>
+  <button (click)="goBack()" class="Bottone-back">go back</button>
+
+</div>
